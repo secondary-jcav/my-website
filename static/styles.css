@@ -1,0 +1,124 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures padding and borders are included in the element's total width and height */
+}
+
+main {
+  flex: 1; /* Allows the main content to grow and push the footer down */
+}
+
+/* Start Header classes*/
+.header-bg {
+  background-color: black; /* bg-black */
+  height: 56px; /* h-14 */
+  width: 100vw; /* Makes the header span the full width of the viewport */
+}
+
+.header-content {
+  display: flex; /* flex */
+  justify-content: space-between; /* justify-between */
+  align-items: center; /* items-center */
+  height: 100%;
+}
+
+.header-button {
+  color: white; /* text-white */
+  width: 106px;
+  height: 21px;
+  background-color: transparent; /* Assuming Tailwind's button reset */
+  border: none; /* Assuming Tailwind's button reset */
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex; /* Align buttons in a flex row */
+  gap: 8px; /* mr-2 - Tailwind's margin-right 2 is roughly 8px */
+}
+
+/* Additional class for the spacing between the buttons */
+.button-spacing {
+  margin-right: 8px; /* Equivalent to mr-2 in Tailwind */
+}
+
+/* End Header classes*/
+.hero-message {
+  color: #c9fc00;
+  font-size: 48px;
+  font-family: "Fira Code", monospace;
+  font-weight: 700;
+  height: 63px;
+}
+
+.hero-intro {
+  color: #fafafa;
+  font-size: 28px;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  height: 40px;
+}
+
+.hero-div {
+  height: 342px;
+  position: absolute;
+  top: 286px;
+  left: 88px;
+  gap: 24px;
+  width: 900px;
+}
+
+/*Footer Classes*/
+.footer-bg {
+  background-color: black; /* bg-black */
+  height: 186px;
+  margin-top: auto;
+  width: 100%; /* Makes the footer span the full width of the viewport */
+}
+
+.footer-message {
+  color: #fafafa;
+  font-size: 24px;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  height: 63px;
+  margin-left: 88px;
+}
+
+/* Responsive adjustments for screens up to 600px wide */
+@media only screen and (max-width: 600px) {
+  .header-bg {
+    width: 100%; /* Adjusted for mobile */
+  }
+
+  .header-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 10px; /* Add space between vertically stacked items */
+  }
+
+  .header-button,
+  .button-group {
+    width: auto; /* Allow buttons to adjust to content size */
+    flex-grow: 1; /* Optional: Allow buttons to fill the available space */
+  }
+
+  .hero-message {
+    font-size: 24px; /* Smaller font size for mobile */
+    text-align: center; /* Center-align for emphasis */
+  }
+
+  .hero-intro {
+    font-size: 18px; /* Adjust intro text size for readability */
+    text-align: center; /* Center-align for consistency */
+  }
+
+  .hero-div {
+    position: static; /* Remove absolute positioning on mobile */
+    width: auto; /* Allow div to adjust to screen size */
+    padding: 20px; /* Add padding for spacing around content */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+}
