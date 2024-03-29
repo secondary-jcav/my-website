@@ -1,5 +1,6 @@
 :root {
   --green: #c9fc00;
+  --hover-green: #7bdd72;
 }
 html,
 body {
@@ -15,6 +16,8 @@ body {
   min-height: 100vh;
   min-width: auto;
 }
+
+/* Header */
 
 .header {
   flex-shrink: 0;
@@ -48,6 +51,50 @@ body {
 .button-spacing {
   margin-right: 8px; /* Equivalent to mr-2 in Tailwind */
 }
+
+/* End Header */
+
+/* Hero Message */
+
+.hero-div {
+  height: 342px;
+  width: 900px;
+  margin-top: 186px;
+  margin-left: 88px;
+  gap: 24px;
+}
+
+h1 {
+  color: var(--green);
+  font-size: 48px;
+  font-family: "Fira Code", monospace;
+  font-weight: 700;
+  height: 63px;
+}
+
+h2 {
+  color: #fafafa;
+  font-size: 28px;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  height: fit-content;
+}
+
+.hero-button {
+  background-color: #202124;
+  border: none;
+  color: var(--green);
+  font-size: 24px;
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+  margin-top: 22px;
+}
+
+.hero-button:hover {
+  color: var(--hover-green);
+}
+
+/* End Hero Message*/
 
 .footer {
   flex-shrink: 0; /* Prevents the header and footer from shrinking */
