@@ -1,6 +1,8 @@
 :root {
   --green: #c9fc00;
   --hover-green: #7bdd72;
+  --press-green: #55bb8f;
+  --light-grey: #fafafa;
 }
 html,
 body {
@@ -14,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: auto;
+  min-width: 100vw;
 }
 
 /* Header */
@@ -58,7 +60,6 @@ body {
 
 .hero-div {
   height: 342px;
-  width: 900px;
   margin-top: 186px;
   margin-left: 88px;
   gap: 24px;
@@ -73,11 +74,12 @@ h1 {
 }
 
 h2 {
-  color: #fafafa;
+  color: var(--light-grey);
   font-size: 28px;
   font-family: "Fira Code", monospace;
   font-weight: 300;
   height: fit-content;
+  width: 60vw;
 }
 
 .hero-button {
@@ -94,7 +96,80 @@ h2 {
   color: var(--hover-green);
 }
 
+.hero-button:active {
+  color: var(--press-green);
+}
+
 /* End Hero Message*/
+
+/* Skills div*/
+
+.experiences-div {
+  gap: 24px;
+  display: flex; /* You can also make this a flex container */
+  flex-direction: column; /* Sets the direction of the main content */
+  width: 100vh;
+}
+
+.experience {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: fit-content;
+  width: 100vw;
+}
+
+h3 {
+  color: var(--green);
+  font-size: 32px;
+  font-family: "Fira Code", monospace;
+  font-weight: 700;
+  height: 63px;
+  margin-top: 186px;
+  margin-left: 88px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  color: var(--light-grey);
+  font-size: 24px;
+  font-family: "Fira Code", monospace;
+  font-weight: 700;
+  margin-left: 88px;
+  margin-bottom: 0;
+}
+
+h5 {
+  color: var(--light-grey);
+  font-size: 24px;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.xp-description {
+  color: var(--light-grey);
+  font-size: 20px;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  margin-left: 88px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.title {
+  display: flex; /* Align buttons in a flex row */
+  gap: 16px; /* mr-2 - Tailwind's margin-right 2 is roughly 8px */
+  align-items: baseline;
+  margin: 0;
+}
+
+/* End Skills div*/
 
 .footer {
   flex-shrink: 0; /* Prevents the header and footer from shrinking */
