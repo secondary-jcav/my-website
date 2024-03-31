@@ -42,6 +42,9 @@ body {
   background-color: transparent; /* Assuming Tailwind's button reset */
   border: none; /* Assuming Tailwind's button reset */
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Fira Code", monospace;
 }
 
 .button-group {
@@ -236,14 +239,42 @@ ul {
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 64px;
+  margin-bottom: 128px;
   padding: 0;
   /* max-width: fit-content; */
 }
 
+.cert-link {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits text color from parent, not using link default colors */
+  display: block; /* Makes the link behave as a block element, containing the div properly */
+}
 /* End Skills div */
 
 .footer {
-  flex-shrink: 0; /* Prevents the header and footer from shrinking */
+  align-items: center;
+  flex-shrink: 0;
+  background-color: black; /* bg-black */
+  height: fit-content;
+  width: 100vw; /* Makes the header span the full width of the viewport */ /* Prevents the header and footer from shrinking */
+  display: flex;
+  color: var(--light-grey);
+  flex-direction: column;
+  font-family: "Fira Code", monospace;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-link {
+  color: inherit; /* Inherits the color from the footer */
+  text-decoration: none; /* Removes underline from the link */
+  display: flex; /* Aligns with the footer's display */
+  align-items: center; /* Centers the link text vertically if needed */
+  justify-content: center; /* Centers the link text horizontally if needed */
+  height: 100%; /* Takes full height of the footer for easier clicking */
+  width: 100%; /* Optional: makes the whole footer area clickable */
+  margin-top: 24px;
 }
 
 .main-content {
