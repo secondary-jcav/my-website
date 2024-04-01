@@ -178,27 +178,32 @@ ul {
 
 /* Begin Skills div */
 
-.image-container {
-  /* Centering the child image */
+.image-container,
+.link-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background-color: black;
   border: 2px solid var(--green);
 
   /* Ensuring the square shape */
   box-sizing: border-box;
-  /*
-  width: calc(
-    (100% - (3 * 20px)) / 4
-  ); /* Subtract total space taken by gaps and divide by 4 
-  max-width: 200px;*/
   max-width: 200px;
-  margin-bottom: 20px; /* Space between rows, if needed */
 
   height: 200px;
+}
+
+.image-container {
+  background-color: inherit;
+}
+
+.link-container {
+  background-color: black;
+}
+
+.link-container:hover {
+  background-color: var(--hover-green);
 }
 
 .image-container img {
@@ -219,29 +224,29 @@ ul {
   align-content: space-evenly;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 20px;
-  column-gap: 10px;
+  row-gap: 24px;
+  column-gap: 24px;
   justify-content: center;
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 64px;
   padding: 0;
-  /* max-width: fit-content; */
+  max-width: 800px;
 }
 
 .certs-container {
   align-content: space-evenly;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
-  column-gap: 10px;
+  row-gap: 24px;
+  column-gap: 24px;
   justify-content: center;
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 64px;
   margin-bottom: 128px;
   padding: 0;
-  /* max-width: fit-content; */
+  max-width: 600px;
 }
 
 .cert-link {
@@ -275,6 +280,10 @@ ul {
   height: 100%; /* Takes full height of the footer for easier clicking */
   width: 100%; /* Optional: makes the whole footer area clickable */
   margin-top: 24px;
+}
+
+.footer-link:hover {
+  font-weight: 700;
 }
 
 .main-content {
