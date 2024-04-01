@@ -355,38 +355,95 @@ ul {
 
 /* Phone (Devices width up to 600px) */
 @media screen and (max-width: 600px) {
+  body,
+  html {
+    max-width: 100vw;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+
+  /* Correcting the container width */
   .container {
-    min-width: 100vh;
+    min-width: 100vw; /* Ensure container width is set to viewport width */
   }
 
   .header {
-    min-width: 100vw;
+    width: 100%; /* Ensures header spans full width without forcing overflow */
   }
 
+  /* Adjusting margins for header buttons for smaller screens */
   .header-button,
   .button-spacing {
-    margin-left: 8px; /* Further reduce margin for very small screens */
+    margin: 0 4px; /* Reducing side margins */
+    padding: 5px 10px; /* Adjust padding to make the buttons easier to tap */
+    font-size: 16px; /* Adjusting font size for better readability */
+  }
+  h3 {
+    font-size: 20px;
   }
 
+  /* Resolving overlap issue by adjusting positioning and spacing */
+  .hero-div h1,
+  .hero-div h2,
+  h3 {
+    text-align: center; /* Center-align text for better spacing and readability */
+    margin: 10px 0;
+    /* Adds margin for spacing between elements */
+  }
+
+  .hero-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Reduced margin-top for tighter spacing */
+    margin-left: 0; /* Remove additional left margin */
+    text-align: center; /* Center-align the contents */
+    align-items: center;
+    padding: 0 10px; /* Add padding instead of margin for side spacing */
+  }
+
+  /* Reducing the font size for h1 to no larger than 24px */
   .hero-div h1 {
-    font-size: 28px; /* Further reduce for phones */
+    font-size: 24px; /* Max font size for h1 */
+    margin-bottom: 10px; /* Ensure some spacing between h1 and subsequent text */
   }
 
+  /* Adjusting font sizes for other elements in the hero-div */
   .hero-div h2 {
-    font-size: 20px; /* Further reduce for phones */
+    font-size: 18px; /* Reduce font size for better fit */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
   }
 
+  /* Adjusting the hero button for smaller screens */
+  .hero-button {
+    display: none;
+    font-size: 16px; /* Reduce button font size for consistency */
+    padding: 8px 16px; /* Adjust padding to ensure button is comfortably tappable */
+    margin-top: 10px; /* Adjust margin-top for spacing */
+  }
+  .experiences-div {
+    margin-top: 100px;
+    align-items: baseline;
+  }
+
+  .experiences-div h3 {
+    font-size: 20px;
+  }
+
+  /* Adjust font sizes within .experience divs for readability */
+  .experience,
+  .title,
+  .xp-description,
+  h4,
+  h5,
+  h6 {
+    font-size: 16px; /* Standardizing font size for consistency */
+    margin-left: 10px; /* Adjusting left margin to ensure content does not cut off */
+    margin-right: 10px; /* Ensuring right-side content is fully visible */
+  }
+
+  /* Adjusting skills and certs container for a single column layout */
   .skills-container,
   .certs-container {
     grid-template-columns: 1fr; /* Single column grid for phones */
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .experiences-div,
-  .experience,
-  .title,
-  .xp-description {
-    margin-left: 20px; /* Adjust content margins for smaller screens */
+    margin: 0 10px; /* Adjusting margins to ensure grid items are fully visible */
   }
 }
