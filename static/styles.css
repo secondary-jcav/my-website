@@ -45,6 +45,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-family: "Fira Code", monospace;
+  margin-left: 24px;
 }
 
 .button-group {
@@ -54,7 +55,7 @@ body {
 
 /* Additional class for the spacing between the buttons */
 .button-spacing {
-  margin-right: 8px; /* Equivalent to mr-2 in Tailwind */
+  margin-right: 24px; /* Equivalent to mr-2 in Tailwind */
 }
 
 /* End Header */
