@@ -14,6 +14,7 @@ func main() {
     r.GET("/", handlers.Home)
     r.GET("/projects", handlers.MyProjects)
     r.GET("/about", handlers.AboutMe)
+    r.GET("/download-file", handlers.DownloadCv)
 
     // Serve static content
     r.Static("/static", "./static")
