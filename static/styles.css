@@ -257,6 +257,33 @@ ul {
 }
 /* End Skills div */
 
+/*Introduction*/
+.intro {
+  margin-top: 186px;
+  display: flex;
+  align-items: center; /* Aligns the text and the image vertically in the center */
+  justify-content: space-between; /* Places the maximum space between text and image */
+  color: var(--light-grey);
+  padding: 24px;
+  box-sizing: border-box;
+  gap: 16px; /* Space between the text block and the image */
+}
+
+.text-intro {
+  font-family: "Fira Code", monospace;
+  font-size: 20px;
+  font-weight: 400;
+  flex: 3;
+}
+
+.intro-image {
+  flex: 1; /* Allows the image to fill the space without pushing out the text */
+  max-width: 40%; /* Maximum width of the image; adjust as needed */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/*End introduction*/
+
 /* Recommendations */
 
 .recommendations-div {
@@ -514,5 +541,30 @@ ul {
     width: 100%;
     padding: 15px; /* Adjust padding for smaller screens */
     margin-bottom: 20px; /* Adjust space between items */
+  }
+
+  .intro {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    margin-top: 100px; /* Optionally adjust the top margin for mobile */
+    padding: 16px; /* Adjust padding for smaller screens */
+  }
+
+  .text-intro {
+    font-size: 18px; /* Slightly reduce the font size for smaller screens */
+    /* Ensure text content takes full width on smaller screens */
+    flex: none;
+    width: 100%;
+    margin-bottom: 16px; /* Add some space between the text and the image */
+  }
+
+  .intro-image {
+    /* Adjust the image to better fit mobile screens */
+    max-width: 80%; /* Increase the max width for the image on smaller screens */
+    /* Optionally center the image within the .intro container */
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    height: auto; /* Keeps the image's aspect ratio */
+    flex: none; /* Remove flex sizing to allow width to control the size */
   }
 }

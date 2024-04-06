@@ -56,7 +56,7 @@ func MyProjects(c *gin.Context) {
 // AboutMe handler
 func AboutMe(c *gin.Context) {
 
-    templ, err:= template.ParseFiles("pages/about.html","templates/header.html","templates/recommendations.html","templates/contact.html","templates/footer.html")
+    templ, err:= template.ParseFiles("pages/about.html","templates/header.html","templates/introduction.html","templates/recommendations.html","templates/contact.html","templates/footer.html")
     if err != nil {
         c.AbortWithError(http.StatusInternalServerError, err)
         return
