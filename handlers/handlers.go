@@ -79,7 +79,7 @@ func AboutMe(c *gin.Context) {
 
 func DownloadCv(c *gin.Context) {
     // Specify the path to the file
-    filePath := "download/JulioArellano.pdf"
+    filePath := "download/JulioArellanoCV.pdf"
 
     // Set the header to inform the browser about the file type and prompt for download
     c.Header("Content-Description", "File Transfer")
