@@ -332,6 +332,66 @@ ul {
   margin: 0;
 }
 /*End recommendations */
+
+/* Projects */
+/*
+.projects-div {
+  gap: 24px;
+  display: flex;
+  width: 100vh;
+}
+
+.project {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: fit-content;
+  width: 100vw;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}*/
+
+.projects-div {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  width: 100%; /* Use full width of the viewport */
+}
+
+.project {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+  padding: 24px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-link {
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Fira Code", monospace;
+  margin-left: 88px;
+  margin-top: 24px;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: var(--hover-green);
+}
+
+.project-link:active {
+  color: var(--press-green);
+}
+
+/* End Projects*/
 .footer {
   align-items: center;
   flex-shrink: 0;
@@ -436,6 +496,19 @@ ul {
       50% - 30px
     ); /* Adjust width for 2 items per row with a smaller gap */
     padding: 20px; /* Adjust padding */
+  }
+
+  .projects-div {
+    flex-direction: column; /* Stack projects vertically */
+  }
+
+  .project {
+    width: 100%; /* Take full width of the screen */
+    padding: 16px; /* Reduce padding */
+  }
+
+  .project img {
+    margin-top: 16px; /* Add some space above the image */
   }
 }
 
@@ -567,5 +640,24 @@ ul {
     margin: 0 auto; /* Centers the image horizontally */
     height: auto; /* Keeps the image's aspect ratio */
     flex: none; /* Remove flex sizing to allow width to control the size */
+  }
+
+  .projects-div {
+    flex-direction: column; /* Stack projects vertically */
+  }
+
+  .project {
+    width: 100%; /* Take full width of the screen */
+    padding: 16px; /* Reduce padding */
+  }
+
+  .project img {
+    margin-top: 16px; /* Add some space above the image */
+  }
+
+  .project-link {
+    font-size: 14px; /* Reduce font size for smaller screens */
+    margin-left: 16px; /* Adjust margin to less than desktop */
+    margin-top: 12px; /* Reduce top margin */
   }
 }

@@ -33,7 +33,7 @@ func Home(c *gin.Context) {
 
 // MyProjects handler
 func MyProjects(c *gin.Context) {
-    templ,err:= template.ParseFiles("pages/project.html","templates/header.html","templates/footer.html")
+    templ,err:= template.ParseFiles("pages/project.html","templates/header.html","templates/my-projects.html","templates/footer.html")
     if err != nil {
         c.AbortWithError(http.StatusInternalServerError, err)
         return
