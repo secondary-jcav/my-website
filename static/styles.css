@@ -108,21 +108,18 @@ h2 {
 }
 
 .hero-button {
-  background-color: #202124;
+  background-color: transparent;
   border: none;
   color: var(--green);
   font-size: 24px;
   font-family: "Fira Code", monospace;
   font-weight: 500;
-  margin-top: 22px;
 }
 
-.hero-button:hover {
-  color: var(--hover-green);
-}
-
-.hero-button:active {
-  color: var(--press-green);
+.hero-text-arrow {
+  display: flex;
+  align-items: center; /* Aligns the text and SVG vertically */
+  gap: 8px; /* Space between the text and the SVG */
 }
 
 /* End Hero Message*/
@@ -572,6 +569,10 @@ ul {
   .hero-div h2 {
     font-size: 18px; /* Reduce font size for better fit */
     margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .hero-text-arrow {
+    display: none;
   }
 
   /* Adjusting the hero button for smaller screens */
