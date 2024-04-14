@@ -2,13 +2,23 @@
 <header class="header">
   <div class="header-content">
     <!-- Left-aligned button -->
-    <a href="/" class="header-button"> Home </a>
+    <a href="/" class="header-button {{if eq .Current `home`}}active{{end}}"
+      >Home</a
+    >
 
     <!-- Right-aligned buttons -->
     <div class="button-group">
-      <a href="/projects" class="header-button button-spacing"> My Projects</a>
-      <a href="/about" class="header-button"> About Me</a>
+      <a
+        href="/projects"
+        class="header-button button-spacing {{if eq .Current `projects`}}active{{end}}"
+        >My Projects</a
+      >
+      <a
+        href="/about"
+        class="header-button {{if eq .Current `about`}}active{{end}}"
+        >About Me</a
+      >
     </div>
   </div>
 </header>
-{{ end }}
+{{end}}

@@ -48,6 +48,14 @@ body {
   margin-left: 24px;
 }
 
+.header-button:hover {
+  color: var(--hover-green);
+}
+
+.header-button.active {
+  font-weight: bold;
+}
+
 .button-group {
   display: flex; /* Align buttons in a flex row */
   gap: 8px;
@@ -205,7 +213,6 @@ ul {
 
 .link-container:hover {
   background-color: var(--hover-green);
-  opacity: 30%;
 }
 
 .image-container img {
