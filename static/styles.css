@@ -393,7 +393,7 @@ ul {
   font-size: 20px;
   font-weight: 300;
   text-decoration: none;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .footer-link {
