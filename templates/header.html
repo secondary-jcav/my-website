@@ -1,23 +1,25 @@
 {{define "header.html"}}
 <header class="header">
   <div class="header-content">
-    <!-- Left-aligned button -->
-    <a href="/" class="header-button {{if eq .Current `home`}}active{{end}}"
-      >Home</a
-    >
+    <!-- Left-aligned logo -->
+    <a href="/" class="header-logo">
+      <img src="/static/logo.svg" alt="Home Logo" style="height: 25px" />
+    </a>
 
     <!-- Right-aligned buttons -->
     <div class="button-group">
       <a
         href="/projects"
         class="header-button button-spacing {{if eq .Current `projects`}}active{{end}}"
-        >My Projects</a
       >
+        My Projects
+      </a>
       <a
         href="/about"
         class="header-button {{if eq .Current `about`}}active{{end}}"
-        >About Me</a
       >
+        About Me
+      </a>
     </div>
   </div>
 </header>

@@ -10,6 +10,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -50,6 +51,18 @@ body {
 
 .header-button:hover {
   color: var(--hover-green);
+}
+
+.header-logo {
+  width: 106px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  margin-left: 24px;
+}
+
+.header-logo:hover {
+  transform: scale(1.1);
 }
 
 .header-button.active {
@@ -532,8 +545,11 @@ ul {
   .hero-div h2,
   h3 {
     text-align: center; /* Center-align text for better spacing and readability */
-    margin: 10px 0;
+    margin: 24px 0;
     /* Adds margin for spacing between elements */
+  }
+  .image-container {
+    margin-bottom: 24px;
   }
 
   .hero-div {
@@ -646,5 +662,9 @@ ul {
     font-size: 14px; /* Reduce font size for smaller screens */
     margin-left: 16px; /* Adjust margin to less than desktop */
     margin-top: 12px; /* Reduce top margin */
+  }
+
+  .footer {
+    margin-top: 32px;
   }
 }
