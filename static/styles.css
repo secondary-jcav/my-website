@@ -340,25 +340,6 @@ ul {
 }
 /*End recommendations */
 
-/* Projects */
-/*
-.projects-div {
-  gap: 24px;
-  display: flex;
-  width: 100vh;
-}
-
-.project {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  height: fit-content;
-  width: 100vw;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}*/
-
 .projects-div {
   margin-top: 32px;
   margin-bottom: 32px;
@@ -412,6 +393,7 @@ ul {
   font-size: 20px;
   font-weight: 300;
   text-decoration: none;
+  padding: 24px;
 }
 
 .footer-link {
