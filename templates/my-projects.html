@@ -1,23 +1,30 @@
 {{define "my-projects.html"}}
 <div class="projects-div">
   <div class="project">
-    <h4>Bounce of the Dead</h4>
-    <h6 class="xp-description">2019</h6>
-    <h6 class="xp-description">Buildbox</h6>
-    <h6 class="xp-description">
-      Bounce of the Dead is an Android game that plunges players into the depths
-      of the underworld alongside Bouncy, a spirited character on a mission to
-      retrieve its scattered bones.
-    </h6>
-    <a
-      class="project-link"
-      href="https://play.google.com/store/apps/details?id=com.gamesbyjoolz.bounceofthedead&hl=en&gl=US&pli=1"
-      target="_blank"
-      >Check on Google Play</a
-    >
+    <div class="project-content">
+      <h4>Bounce of the Dead</h4>
+      <h6 class="xp-description">2019</h6>
+      <h6 class="xp-description">Buildbox</h6>
+      <h6 class="xp-description">
+        Bounce of the Dead is an Android game that plunges players into the
+        depths of the underworld alongside Bouncy, a spirited character on a
+        mission to retrieve its scattered bones.
+      </h6>
+      <a
+        class="project-link"
+        href="https://play.google.com/store/apps/details?id=com.gamesbyjoolz.bounceofthedead&hl=en&gl=US&pli=1"
+        target="_blank"
+        >Check on Google Play</a
+      >
+    </div>
   </div>
-  <img class="project-image" src="/static/bouncy.svg" alt="" />
+  <img
+    class="project-image"
+    src="/static/bouncy.svg"
+    alt="Project image of Bounce of the Dead"
+  />
 </div>
+
 <div class="projects-div">
   <div class="project">
     <h4>This website!</h4>
@@ -36,13 +43,15 @@
       >Take a look at the repo</a
     >
   </div>
-  <img class="project-image" src="/static/website.png" alt="" />
+  <img class="project-image" src="/static/go.svg" alt="" />
 </div>
 <div class="projects-div">
   <div class="project">
     <h4>QA Assistant</h4>
     <h6 class="xp-description">2023</h6>
-    <h6 class="xp-description">FastAPI (Python) BE with LLM integration</h6>
+    <h6 class="xp-description">
+      FastAPI (Python) BE with LLamaIndex integration
+    </h6>
     <h6 class="xp-description">
       Tool designed to streamline the quality assurance process for software
       development projects. This assistant offers two primary functionalities:
@@ -55,6 +64,7 @@
       >Take a look at the repo</a
     >
   </div>
+  <img class="project-image" src="/static/llamaindex.svg" alt="" />
 </div>
 <div class="projects-div">
   <div class="project">
@@ -71,5 +81,6 @@
       >Take a look at the repo</a
     >
   </div>
+  <img class="project-image" src="/static/telegram.svg" alt="" />
 </div>
 {{end}}

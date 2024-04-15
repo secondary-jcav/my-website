@@ -349,24 +349,32 @@ ul {
 /*End recommendations */
 
 .projects-div {
+  gap: 96px;
   margin-top: 32px;
   margin-bottom: 32px;
   display: flex;
+  align-items: center; /* Aligns children vertically in the middle */
+  background-color: black; /* Ensures the bar is black */
   width: 100%; /* Use full width of the viewport */
+  padding: 24px; /* Adds padding around the inside of the container */
 }
 
 .project {
-  background-color: black;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 50%;
-  padding: 24px;
-  margin-right: 48px;
+  width: 50%; /* Takes up half the space of its container */
+  color: white; /* Ensures text color is white on black background */
 }
 
-.project img {
-  max-width: 100%;
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-image {
+  max-width: 50%; /* Image takes the other half of the space */
   height: auto;
 }
 
@@ -375,9 +383,9 @@ ul {
   font-size: 16px;
   font-weight: 300;
   font-family: "Fira Code", monospace;
-  margin-left: 88px;
   margin-top: 24px;
   text-decoration: none;
+  margin-left: 88px;
 }
 
 .project-link:hover {
