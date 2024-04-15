@@ -386,6 +386,9 @@ ul {
   margin-top: 24px;
   text-decoration: none;
   margin-left: 88px;
+  display: flex; /* Makes the link flex to align text and image inline */
+  align-items: center; /* Centers the items vertically */
+  gap: 8px; /* Optional: adds a gap between the text and the image */
 }
 
 .project-link:hover {
@@ -394,6 +397,12 @@ ul {
 
 .project-link:active {
   color: var(--press-green);
+}
+
+.link-arrow {
+  width: 16px; /* or any size that fits your design */
+  height: auto;
+  display: block;
 }
 
 /* End Projects*/
@@ -450,12 +459,26 @@ ul {
     margin-left: 12px; /* Reduce margin for smaller screens */
   }
 
+  .hero-div {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
   .hero-div h1 {
     font-size: 36px; /* Smaller font size for tablets */
   }
 
   .hero-div h2 {
     font-size: 24px; /* Smaller font size for tablets */
+  }
+
+  .hero-text-arrow {
+    display: none;
+  }
+
+  h3 {
+    margin-top: 64px;
+    margin-bottom: 32px;
   }
 
   .skills-container,
@@ -505,17 +528,18 @@ ul {
   }
 
   .projects-div {
+    gap: 32px;
     flex-direction: column; /* Stack projects vertically */
   }
 
   .project {
-    width: 100%; /* Take full width of the screen */
+    width: 80%; /* Take full width of the screen */
     padding: 16px; /* Reduce padding */
   }
 
-  .project img {
-    margin-top: 16px; /* Add some space above the image */
-  }
+  /*   .project img {
+    margin-top: 16px; 
+  } */
 }
 
 /* Phone (Devices width up to 600px) */
@@ -532,7 +556,8 @@ ul {
   }
 
   .header {
-    width: 100%; /* Ensures header spans full width without forcing overflow */
+    width: 100%;
+    margin-bottom: 32px; /* Ensures header spans full width without forcing overflow */
   }
 
   /* Adjusting margins for header buttons for smaller screens */
@@ -561,6 +586,7 @@ ul {
   .hero-div {
     display: flex;
     flex-direction: column;
+    margin-bottom: 32px;
     margin-top: 20px; /* Reduced margin-top for tighter spacing */
     margin-left: 0; /* Remove additional left margin */
     text-align: center; /* Center-align the contents */
@@ -633,7 +659,7 @@ ul {
   .intro {
     flex-direction: column; /* Stack text and image vertically */
     align-items: flex-start; /* Align items to the start of the container */
-    margin-top: 100px; /* Optionally adjust the top margin for mobile */
+    margin-top: 64px; /* Optionally adjust the top margin for mobile */
     padding: 16px; /* Adjust padding for smaller screens */
   }
 
@@ -656,16 +682,14 @@ ul {
   }
 
   .projects-div {
+    margin-top: 0;
+    gap: 32px;
     flex-direction: column; /* Stack projects vertically */
   }
 
   .project {
-    width: 100%; /* Take full width of the screen */
+    width: 80%;
     padding: 16px; /* Reduce padding */
-  }
-
-  .project img {
-    margin-top: 16px; /* Add some space above the image */
   }
 
   .project-link {
